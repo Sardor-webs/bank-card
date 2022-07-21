@@ -1,0 +1,333 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background:rgb(246, 205, 118);
+}
+
+/* start is start */
+
+.container{
+    margin: 0 auto;
+    width: 800px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    display: flex;
+    border-radius: 5px;
+}
+
+
+/* left part start */
+
+
+.card_titles {
+  width: 35%;
+  height: 100%;
+  background: rgb(241, 241, 241);
+  overflow-y: scroll;
+  padding-right: 6px;
+}
+
+.card_titles h2  .c_balance{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.card_titles .titles-plus h2{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.card{
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(150, 138, 138, 0.39);
+  width: 200px;
+  height: 130px;
+  padding: 15px;
+  padding-top: 20px;
+}
+
+.titles-plus{
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plus {
+  width: 20px;
+}
+
+
+/* Cards start */
+
+
+
+
+.cards {
+  width: 100%;
+  height: 140%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  position: relative;
+
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.541);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(0, 0, 0, 0.741);
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.wallets:hover {
+  padding-right: 0;
+  overflow: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.cards p {
+  opacity: 0.7;
+}
+
+/* card 1 */
+
+.c__first{
+  width: 200px;
+  height: 130px;
+  background: #fff;
+  border: 1px solid rgba(150, 138, 138, 0.39);
+  border-radius: 5px ;
+  -webkit-border-radius: 5px ;
+  -moz-border-radius: 5px ;
+  -ms-border-radius: 5px ;
+  -o-border-radius: 5px ;
+  padding: 20px;
+}
+
+.c__first .card-number{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* card 2 */
+
+.c__second .card-number{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.c__second{
+  width: 200px;
+  height: 130px;
+  background: #fff;
+  border: 1px solid rgba(150, 138, 138, 0.39);
+  border-radius: 5px ;
+  -webkit-border-radius: 5px ;
+  -moz-border-radius: 5px ;
+  -ms-border-radius: 5px ;
+  -o-border-radius: 5px ;
+  padding: 20px;
+}
+
+/* card 3 */
+
+.c__third{
+  width: 200px;
+  height: 130px;
+  background: #fff;
+  border: 1px solid rgba(150, 138, 138, 0.39);
+  border-radius: 5px ;
+  -webkit-border-radius: 5px ;
+  -moz-border-radius: 5px ;
+  -ms-border-radius: 5px ;
+  -o-border-radius: 5px ;
+  padding: 20px;
+}
+
+.c__third .card-number{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card:active{
+  border: 1px solid Blue;
+}
+
+.card-text{
+  font-size: 15px;
+}
+
+.maestro,.mastercard {
+    height: 40px;
+}
+
+.maestro{
+  height: 40px;
+}
+
+.visa {
+  width: 70px;
+}
+
+
+/* Cards profile start */
+
+
+/* Profile header start */
+
+
+.profile__cards{
+  /* history */
+  width: 65%;
+  overflow-y: hidden;
+  padding-right: 6px;
+}
+
+.profile__cards:hover{
+  /* history:hover */
+  overflow-y: scroll;
+  padding-right: 0;
+}
+
+.wrapper{
+  /* wrap */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-profile{
+  /* upper */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.value{
+  /* maoney */
+  font-size: 27px;
+  font-weight: 600;
+  display: flex;
+  opacity: 0.8;
+}
+
+.value span{
+  font-size: 20px;
+}
+
+.c_balance{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+/* Profile header finish */
+
+
+/* Profile main start */
+
+
+/* Floors start */
+
+.house{
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.2;
+  margin-top:15px; 
+}
+
+.floor{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.floor img{
+  width: 25px;
+  margin-right: -20px;
+  opacity: 0.6;
+}
+
+.classroom{
+  line-height: 24px;
+  width: 270px;
+}
+
+.classroom h3{
+  opacity: 0.9;
+}
+
+.classroom p{
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.s__value{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(57, 9, 121);
+  opacity: 0.6;
+  display: flex;
+}
+
+.s__value span{
+    font-size: 15px;
+}
+
+.m__value{
+  font-size: 20px;
+  font-weight: 600;
+  color: green;
+  opacity: 0.6;
+  display: flex;
+}
+
+.m__value span{
+  font-size: 15px;
+}
+
+/* Floors end */
+
+
+/* Frofile main end */
+
+
+
+
+
+
+
+
+
